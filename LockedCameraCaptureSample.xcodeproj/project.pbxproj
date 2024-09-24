@@ -64,6 +64,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		EB1C68852CA2812100F7B0D9 /* Exceptions for "LockedCameraCaptureSample" folder in "LockedCameraCaptureSample" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = EBA362102C9ED414004B7E40 /* LockedCameraCaptureSample */;
+		};
 		EBA362612C9ED678004B7E40 /* Exceptions for "WidgetExtension" folder in "WidgetExtensionExtension" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
@@ -97,6 +104,9 @@
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		EBA362132C9ED414004B7E40 /* LockedCameraCaptureSample */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				EB1C68852CA2812100F7B0D9 /* Exceptions for "LockedCameraCaptureSample" folder in "LockedCameraCaptureSample" target */,
+			);
 			path = LockedCameraCaptureSample;
 			sourceTree = "<group>";
 		};
@@ -484,6 +494,7 @@
 				DEVELOPMENT_TEAM = KJ7MT7V8HJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LockedCameraCaptureSample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -513,6 +524,7 @@
 				DEVELOPMENT_TEAM = KJ7MT7V8HJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LockedCameraCaptureSample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

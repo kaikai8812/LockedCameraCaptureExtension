@@ -4,10 +4,5 @@
 <dict>
 	<key>NSCameraUsageDescription</key>
 	<string>カメラを使用します。</string>
-	<key>EXAppExtensionAttributes</key>
-	<dict>
-		<key>EXExtensionPointIdentifier</key>
-		<string>com.apple.securecapture</string>
-	</dict>
 </dict>
 </plist>
