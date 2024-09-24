@@ -11,20 +11,12 @@ import WidgetKit
 
 struct WidgetExtensionControl: ControlWidget {
     var body: some ControlWidgetConfiguration {
-        StaticControlConfiguration(
-            kind: "kaikai.LockedCameraCaptureSample.WidgetExtension",
-            provider: Provider()
-        ) { value in
-            ControlWidgetToggle(
-                "Start Timer",
-                isOn: value,
-                action: StartTimerIntent()
-            ) { isRunning in
-                Label(isRunning ? "On" : "Off", systemImage: "timer")
+        StaticControlConfiguration(kind: "kaikai.LockedCameraCaptureSample.WidgetExtension") {
+            ControlWidgetButton(action: CaptureIntent()) {
+                Label("LockedCapture", systemImage: "camera.viewfinder")
             }
         }
-        .displayName("Timer")
-        .description("A an example control that runs a timer.")
+        .displayName("カメラを起動")
     }
 }
 
