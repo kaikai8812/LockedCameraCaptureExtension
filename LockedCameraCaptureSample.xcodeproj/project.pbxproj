@@ -78,6 +78,20 @@
 			);
 			target = EBA3628E2C9F001F004B7E40 /* CaptureExtension */;
 		};
+		EBA362BF2C9F0332004B7E40 /* Exceptions for "WidgetExtension" folder in "LockedCameraCaptureSample" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				CaptureIntent.swift,
+			);
+			target = EBA362102C9ED414004B7E40 /* LockedCameraCaptureSample */;
+		};
+		EBA362C02C9F0332004B7E40 /* Exceptions for "WidgetExtension" folder in "CaptureExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				CaptureIntent.swift,
+			);
+			target = EBA3628E2C9F001F004B7E40 /* CaptureExtension */;
+		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -89,7 +103,9 @@
 		EBA362512C9ED677004B7E40 /* WidgetExtension */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
+				EBA362BF2C9F0332004B7E40 /* Exceptions for "WidgetExtension" folder in "LockedCameraCaptureSample" target */,
 				EBA362612C9ED678004B7E40 /* Exceptions for "WidgetExtension" folder in "WidgetExtensionExtension" target */,
+				EBA362C02C9F0332004B7E40 /* Exceptions for "WidgetExtension" folder in "CaptureExtension" target */,
 			);
 			path = WidgetExtension;
 			sourceTree = "<group>";
