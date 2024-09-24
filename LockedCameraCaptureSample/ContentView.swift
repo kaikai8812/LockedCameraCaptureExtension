@@ -7,14 +7,29 @@
 
 import SwiftUI
 import AVFoundation
+import LockedCameraCapture
 
 struct ContentView: View {
+    
+    @State var imageValues: [UIImage] = []
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Button("LockedCaptureで撮影した写真を表示する") {
+                getLockedCaptureImage()
+            }
+            
+            ScrollView {
+                VStack(spacing: 10) {
+                    ForEach(imageValues.indices, id: \.self) { index in
+                        Image(uiImage: imageValues[index])
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(maxWidth: .infinity)
+                            .padding()
+                    }
+                }
+            }
         }
         .onAppear {
             Task {
