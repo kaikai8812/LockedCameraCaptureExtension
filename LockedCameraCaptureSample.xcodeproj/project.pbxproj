@@ -10,6 +10,7 @@
 		EBA3624E2C9ED677004B7E40 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBA3624D2C9ED677004B7E40 /* WidgetKit.framework */; };
 		EBA362502C9ED677004B7E40 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBA3624F2C9ED677004B7E40 /* SwiftUI.framework */; };
 		EBA3625D2C9ED678004B7E40 /* WidgetExtensionExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = EBA3624B2C9ED677004B7E40 /* WidgetExtensionExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EBA362982C9F001F004B7E40 /* CaptureExtension.appex in Embed ExtensionKit Extensions */ = {isa = PBXBuildFile; fileRef = EBA3628F2C9F001F004B7E40 /* CaptureExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -19,6 +20,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = EBA3624A2C9ED677004B7E40;
 			remoteInfo = WidgetExtensionExtension;
+		};
+		EBA362962C9F001F004B7E40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EBA362092C9ED414004B7E40 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EBA3628E2C9F001F004B7E40;
+			remoteInfo = CaptureExtension;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -34,6 +42,17 @@
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EBA3629D2C9F001F004B7E40 /* Embed ExtensionKit Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(EXTENSIONS_FOLDER_PATH)";
+			dstSubfolderSpec = 16;
+			files = (
+				EBA362982C9F001F004B7E40 /* CaptureExtension.appex in Embed ExtensionKit Extensions */,
+			);
+			name = "Embed ExtensionKit Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +60,7 @@
 		EBA3624B2C9ED677004B7E40 /* WidgetExtensionExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WidgetExtensionExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBA3624D2C9ED677004B7E40 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		EBA3624F2C9ED677004B7E40 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		EBA3628F2C9F001F004B7E40 /* CaptureExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.extensionkit-extension"; includeInIndex = 0; path = CaptureExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -50,6 +70,13 @@
 				Info.plist,
 			);
 			target = EBA3624A2C9ED677004B7E40 /* WidgetExtensionExtension */;
+		};
+		EBA362992C9F001F004B7E40 /* Exceptions for "CaptureExtension" folder in "CaptureExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = EBA3628E2C9F001F004B7E40 /* CaptureExtension */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
@@ -65,6 +92,14 @@
 				EBA362612C9ED678004B7E40 /* Exceptions for "WidgetExtension" folder in "WidgetExtensionExtension" target */,
 			);
 			path = WidgetExtension;
+			sourceTree = "<group>";
+		};
+		EBA362902C9F001F004B7E40 /* CaptureExtension */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				EBA362992C9F001F004B7E40 /* Exceptions for "CaptureExtension" folder in "CaptureExtension" target */,
+			);
+			path = CaptureExtension;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -86,6 +121,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EBA3628C2C9F001F004B7E40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -94,6 +136,7 @@
 			children = (
 				EBA362132C9ED414004B7E40 /* LockedCameraCaptureSample */,
 				EBA362512C9ED677004B7E40 /* WidgetExtension */,
+				EBA362902C9F001F004B7E40 /* CaptureExtension */,
 				EBA3624C2C9ED677004B7E40 /* Frameworks */,
 				EBA362122C9ED414004B7E40 /* Products */,
 			);
@@ -104,6 +147,7 @@
 			children = (
 				EBA362112C9ED414004B7E40 /* LockedCameraCaptureSample.app */,
 				EBA3624B2C9ED677004B7E40 /* WidgetExtensionExtension.appex */,
+				EBA3628F2C9F001F004B7E40 /* CaptureExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,11 +172,13 @@
 				EBA3620E2C9ED414004B7E40 /* Frameworks */,
 				EBA3620F2C9ED414004B7E40 /* Resources */,
 				EBA3625E2C9ED678004B7E40 /* Embed Foundation Extensions */,
+				EBA3629D2C9F001F004B7E40 /* Embed ExtensionKit Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				EBA3625C2C9ED678004B7E40 /* PBXTargetDependency */,
+				EBA362972C9F001F004B7E40 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				EBA362132C9ED414004B7E40 /* LockedCameraCaptureSample */,
@@ -166,6 +212,28 @@
 			productReference = EBA3624B2C9ED677004B7E40 /* WidgetExtensionExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		EBA3628E2C9F001F004B7E40 /* CaptureExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBA3629A2C9F001F004B7E40 /* Build configuration list for PBXNativeTarget "CaptureExtension" */;
+			buildPhases = (
+				EBA3628B2C9F001F004B7E40 /* Sources */,
+				EBA3628C2C9F001F004B7E40 /* Frameworks */,
+				EBA3628D2C9F001F004B7E40 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				EBA362902C9F001F004B7E40 /* CaptureExtension */,
+			);
+			name = CaptureExtension;
+			packageProductDependencies = (
+			);
+			productName = CaptureExtension;
+			productReference = EBA3628F2C9F001F004B7E40 /* CaptureExtension.appex */;
+			productType = "com.apple.product-type.extensionkit-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -180,6 +248,9 @@
 						CreatedOnToolsVersion = 16.0;
 					};
 					EBA3624A2C9ED677004B7E40 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					EBA3628E2C9F001F004B7E40 = {
 						CreatedOnToolsVersion = 16.0;
 					};
 				};
@@ -200,6 +271,7 @@
 			targets = (
 				EBA362102C9ED414004B7E40 /* LockedCameraCaptureSample */,
 				EBA3624A2C9ED677004B7E40 /* WidgetExtensionExtension */,
+				EBA3628E2C9F001F004B7E40 /* CaptureExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -213,6 +285,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		EBA362492C9ED677004B7E40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBA3628D2C9F001F004B7E40 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -236,6 +315,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EBA3628B2C9F001F004B7E40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -243,6 +329,11 @@
 			isa = PBXTargetDependency;
 			target = EBA3624A2C9ED677004B7E40 /* WidgetExtensionExtension */;
 			targetProxy = EBA3625B2C9ED678004B7E40 /* PBXContainerItemProxy */;
+		};
+		EBA362972C9F001F004B7E40 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EBA3628E2C9F001F004B7E40 /* CaptureExtension */;
+			targetProxy = EBA362962C9F001F004B7E40 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -478,6 +569,56 @@
 			};
 			name = Release;
 		};
+		EBA3629B2C9F001F004B7E40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KJ7MT7V8HJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CaptureExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CaptureExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kaikai.LockedCameraCaptureSample.CaptureExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EBA3629C2C9F001F004B7E40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KJ7MT7V8HJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CaptureExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CaptureExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kaikai.LockedCameraCaptureSample.CaptureExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -504,6 +645,15 @@
 			buildConfigurations = (
 				EBA3625F2C9ED678004B7E40 /* Debug */,
 				EBA362602C9ED678004B7E40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBA3629A2C9F001F004B7E40 /* Build configuration list for PBXNativeTarget "CaptureExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBA3629B2C9F001F004B7E40 /* Debug */,
+				EBA3629C2C9F001F004B7E40 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
